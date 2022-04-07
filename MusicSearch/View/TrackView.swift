@@ -40,7 +40,7 @@ struct TrackView: View {
                         Text("Title: \(track.trackName)")
                         Text("Album: \(track.collectionName)")
                         Text("Genre: \(track.primaryGenreName)")
-                        Text("Release: \(track.releaseDate)")
+                        Text("Release: \(track.year)")
                         HStack {
                             Text("Link:")
                             Text("Go To Song")
@@ -54,6 +54,7 @@ struct TrackView: View {
                         }
                     }
                 }
+                .listStyle(.plain)
                 .navigationTitle("Artist: \(track.artistName)")
             }
         }

@@ -25,4 +25,17 @@ struct Track: Codable, Comparable {
     var coverUrl: URL? {
         return URL(string: artworkUrl60)
     }
+    
+    var year: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let date = dateFormatter.date(from:releaseDate)!
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day, .hour], from: date)
+        if let year = components.year {
+            return String(year)
+        }
+        return releaseDate
+    }
 }
