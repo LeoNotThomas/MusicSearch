@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-struct SearchResponse<T: Codable>: Codable {
-    var results: [T]
+struct SearchResponse: Codable {
+    var results: [Track]
 }
 
 class SearchDataSource: ObservableObject {
