@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2142E0BB27FF0E3C00C9E9AB /* TestTracks.json in Resources */ = {isa = PBXBuildFile; fileRef = 2142E0BA27FF0E3C00C9E9AB /* TestTracks.json */; };
+		2142E0BE27FF0E7900C9E9AB /* TrackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142E0BD27FF0E7900C9E9AB /* TrackTest.swift */; };
 		2146C27B27F9C83400BB57F2 /* MusicSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2146C27A27F9C83400BB57F2 /* MusicSearchApp.swift */; };
 		2146C27D27F9C83400BB57F2 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2146C27C27F9C83400BB57F2 /* SearchResultsView.swift */; };
 		2146C27F27F9C83600BB57F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2146C27E27F9C83600BB57F2 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2142E0BA27FF0E3C00C9E9AB /* TestTracks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestTracks.json; sourceTree = "<group>"; };
+		2142E0BD27FF0E7900C9E9AB /* TrackTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTest.swift; sourceTree = "<group>"; };
 		2146C27727F9C83400BB57F2 /* MusicSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2146C27A27F9C83400BB57F2 /* MusicSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchApp.swift; sourceTree = "<group>"; };
 		2146C27C27F9C83400BB57F2 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2142E0B927FF0DE200C9E9AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2142E0BA27FF0E3C00C9E9AB /* TestTracks.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2142E0BC27FF0E5A00C9E9AB /* TestClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2142E0BD27FF0E7900C9E9AB /* TrackTest.swift */,
+			);
+			path = TestClasses;
+			sourceTree = "<group>";
+		};
 		2146C26E27F9C83300BB57F2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +149,8 @@
 		2146C28A27F9C83600BB57F2 /* MusicSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				2142E0BC27FF0E5A00C9E9AB /* TestClasses */,
+				2142E0B927FF0DE200C9E9AB /* Resources */,
 				2146C28B27F9C83600BB57F2 /* MusicSearchTests.swift */,
 			);
 			path = MusicSearchTests;
@@ -285,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2142E0BB27FF0E3C00C9E9AB /* TestTracks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2146C28C27F9C83600BB57F2 /* MusicSearchTests.swift in Sources */,
+				2142E0BE27FF0E7900C9E9AB /* TrackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
